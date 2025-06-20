@@ -27,6 +27,17 @@ This is a simple authentication system built with **Node.js**, **Express**, and 
 - OTP Generator
 
 ---
+├── index.js               # Main server file
+├── views/                 # EJS templates
+│   ├── Login.ejs
+│   ├── Signup.ejs
+│   ├── Home.ejs
+│   ├── Everify.ejs
+│   ├── OtpVerify.ejs
+│   ├── ChangePassword.ejs
+│   ├── NotFound.ejs
+├── package.json
+├── package-lock.json
 
 ## 📦 Installation
 
