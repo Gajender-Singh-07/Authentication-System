@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Verify - OTP</title>
+    <%- include("Link.ejs") %>
+
+</head>
+<body class="bg-dark">
+    <div class="container p-5 align-center mt-5">
+        <div class="col-5 mx-auto mt-5">
+           
+                <form action="/changepass" method="post">
+                    <h1 class="h3 mb-3 fw-normal text-center text-light fs-2">Verify OTP</h1>
+                    <h1 class="text-light" value="<%- id %>" name="id"></h1>
+                <div class="form-floating mb-3">
+                  <input type="text" class="form-control" id="floatingInput"  name="newpass">
+                  <label for="floatingInput">Enter OTP</label>
+                </div>
+                <div class="row">
+                    <div class="col-sm-6">
+                        <h6 class="text-start mt-1"><a href="" class="text-light text-decoration-none">Resend OTP</a></h6>
+                    </div>
+                    </div>
+                    <button class="btn btn-danger w-100 py-2" type="submit">Verify</button>
+            
+                </form>
+        
+        </div>
+       
+
+    </div>
+  
+</body>
+</html>

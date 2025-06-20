@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-verify</title>
+    <%- include("Link.ejs") %>
+
+</head>
+<body class="bg-dark">
+    <div class="container-fluid mt-5">
+        <div class="row">
+            <div class="col-sm-4"></div>
+            <div class="col-sm-4">
+                <div class="row my-5"></div>
+                    <form action="/otpverify" method="post">
+                     
+                      <h1 class="h3 mb-3 fw-normal text-center text-light">Email Verification</h1>
+                  
+                      <div class="form-floating mb-3">
+                        <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com" name="Email">
+                        <label for="floatingInput">Enter your registered email address</label>
+                      </div>
+                      <button class="btn btn-primary w-100 py-2" type="submit">Verify</button>
+                    </form>
+            </div>
+            <div class="col-sm-4"></div>
+        </div>
+    </div>
+</body>
+</html>

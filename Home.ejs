@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <%- include("Link.ejs") %>
+
+</head>
+<body class="bg-dark">
+    <div class="alert alert-warning alert-dismissible fade show mt-5" role="alert">
+        <strong class="text-center"><%- message %></strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="Close"></button>
+      </div>
+    <div class="container mt-5">
+    <h1 class="text-center text-light"> This is the HomePage!</h1>
+    <div class="row">
+        <div class="col-4 mt-2">
+            <h2 class="text-light">User - <%- user %></h2>
+            <h2 class="text-light">Email  - <%- email  %></h2>
+            <h2 class="text-light">Password  - <%- password  %></h2>
+        </div>
+        <a href="/logout" ><button class="btn btn-success mt-2">Logout</button></a>
+    </div>
+</div>
+
+</body>
+</html>

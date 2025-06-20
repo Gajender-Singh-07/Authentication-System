@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp - Page</title>
+    <%- include("Link.ejs") %>
+
+</head>
+<body class="bg-dark">
+    <div class="container p-5 align-center">
+        <div class="col-5 mx-auto mt-5">
+
+            <form action="/submit" method="post">
+
+    <h1 class="h3 mb-3 fw-normal text-center text-light fs-2">SIGN UP</h1>
+
+             
+
+                <div class="form-floating mb-3">
+                    <input type="text" class="form-control" id="floatingInput" name="User">
+                    <label for="floatingInput">Username</label>
+                  </div>
+                <div class="form-floating mb-3">
+                  <input type="email" class="form-control" id="floatingInput"  name="Email">
+                  <label for="floatingInput">Email address</label>
+                </div>
+                <div class="form-floating">
+                  <input type="password" class="form-control" id="floatingPassword" name="Password">
+                  <label for="floatingPassword">Password</label>
+                </div>
+            
+                <button class="btn btn-primary w-100 py-2 mt-3" type="submit">Sign Up</button>
+                <div class="row">
+                  <div class="col-sm-4 px-3">
+                      <h6 class=" mt-3 text-light">Already Registered!</h6>
+                  </div>
+                  <div class="col-sm-3 px-0">
+                      <h6 class=" mt-3"><a href="/login" class="text-light text-decoration-none">Sign in</a></h6>
+                  </div>
+                </div>
+              </form> 
+        </div>
+      
+    </div>
+</body>
+</html>
